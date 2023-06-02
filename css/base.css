@@ -1,0 +1,361 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+    background: #0a0a0a;
+}
+
+.redtreeLogo {
+    display: block;
+    width: 110px;
+    height: 70px;
+}
+.redtreeLogo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.carousel {
+    margin-bottom: 15px;
+    margin-top: -50px;
+} 
+.homeHeading {
+    font-size: 30px;
+    font-weight: normal;
+    padding: 0px;
+    margin: 0px;
+}
+.homeSub {
+    font-size: 3.7rem;
+    font-weight: 300;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 45px;
+}
+.btnCommon{
+    background: #07DEFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 0px;
+}
+.btnCommon:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #f5f2f2 !important;
+}
+.loginBtn {
+    background: #fff;
+    color: #000;
+    padding: 5px 23px;
+    border-radius: 16px;
+    text-decoration: none;
+    margin: 0px;
+}
+.loginBtn:hover {
+    background: #ff9900;
+    color: #000;
+    padding: 5px 23px;
+    border-radius: 16px;
+    text-decoration: none;
+    margin: 0px;
+}
+.abtBg{
+    background: url(../images/abtBanner.png) center no-repeat;
+    height: 670px;
+    padding: 60px 30px 30px 30px;
+    margin: 0px;
+}
+.aboutUs{
+    display: block;
+    padding: 15px 0px;
+    color: #fff;
+}
+.aboutUs {
+    display: block;
+    padding: 15px 0px 0px 0px;
+    color: #fff;
+    margin: 0px;
+}
+.aboutUs h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    padding:35px 0px 0px 15px;
+}
+.contentInfo {
+    display: block;
+    padding: 15px 0px;
+    margin: 15px 0px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: normal;
+}
+.abtDiv{
+    padding: 15px;
+        background: url(../images/smlBanner.png) center top no-repeat;
+        min-height: 390px;
+        background-size: cover;
+        padding-top: 200px;
+}
+.abtContent {
+    color: #000;
+    font-size: 17px;
+    text-align: center;
+    line-height: 28px;
+}
+.dotCir {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    padding: 10px;
+}
+.grayCir {
+    color: #999;
+    font-size: 26px;
+    padding: 0px 3px;
+    cursor: pointer;
+}
+.redCir {
+    color: #E25E4A;
+    font-size: 26px;
+    padding: 0px 3px;
+    cursor: pointer;
+}
+.whiteCir {
+    color: #fff;
+    font-size: 26px;
+    padding: 0px 3px;
+    cursor: pointer;
+}
+.ourValues {
+    background: #fff;
+    padding: 30px 0px;
+    margin: 0px;
+    display: block;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.ourValues h2 {
+    font-size: 3.5rem;
+    color:#1192BA;
+    font-weight: 700;
+    padding: 30px 0px;
+    text-align: center;
+
+}
+.ourValues p {
+    font-size:19px;
+    color:#303030;
+    font-weight: normal;
+    padding: 0px 0px;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 100px;
+}
+.bxDiv {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding:10px 15px;
+    margin: 0px;
+    display: block;
+    border: #f5f2f2 solid 1px;
+    cursor: pointer;
+}
+.bxDiv:hover {
+    background: #1192BA;
+    cursor: pointer;
+}
+.bxDiv h2 {
+    font-size: 22px;
+    padding: 20px 0px;
+    margin: 0px;
+    text-align: center;
+    font-weight: normal;
+    color: #000;
+    margin-top: 100px;
+}
+.bxDiv p {
+    font-size: 17px;
+    padding: 20px 15px 50px 15px;
+    margin: 0px;
+    text-align: center;
+    font-weight: normal;
+    color: #000;
+}
+a.learnBtn {
+    background: #1192BA;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 21px;
+    text-decoration: none;
+    line-height: 25px;
+}
+.learnBtn:hover {
+    background: #fff;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 21px;
+    text-decoration: none;
+    line-height: 25px;
+}
+.iconHome {
+    border: #e9e7e7 solid 1px;
+    border-radius: 90px;
+    padding: 15px;
+    margin: 0px;
+    width: 160px;
+    text-align: center;
+    margin: 0px auto;
+    position: absolute;
+    top: -80px;
+    left: 100px;
+    background: #fff;
+}
+.iconHome img {
+    width: 100%;
+    padding: 10px;
+}
+.infoSection {
+    padding: 10px;
+    margin: 15px 0px 50px 0px;
+}
+.teamDiv{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding:30px 15px;
+    background: #fff;
+    border: #f5f2f2 solid 1px;
+    text-align: center;
+    min-height: 400px;
+}
+.picTeam {
+    width: 120px;
+    margin: 0px auto;
+    background: #fff;
+    border: #fffdfd solid 1px;
+    border-radius: 90px;
+    padding: 29px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.picTeam img {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.teamInfo{
+    display: block;
+    padding: 10px;
+    margin: 0px;
+}
+.teamInfo h2{
+    display: block;
+    padding: 10px;
+    margin: 0px;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+}
+.teamInfo h3 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #999;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+}
+.teamInfo p {
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+    padding: 0px;
+    margin: 15px 0px 30px 0px;
+}
+.socialIcon {
+    display: block;
+    margin: 0px auto;
+    padding: 15px;
+    text-align: center;
+}
+.socialIcon span {
+    border-radius: 18px;
+    padding: 5px 10px;
+    margin: 0px 10px 0px 0px;
+    color: #fff;
+    cursor: pointer;
+}
+.contactForm {
+    background: #000;
+    padding: 30px 0px;
+    margin: 0px;
+    color: #f5f2f2;
+}
+.contactForm h5 {
+    font-size: 28px;
+    font-weight: normal;
+    padding: 10px 0px;
+}
+.paraInfo {
+    font-size: 16px;
+    color: #999;
+    line-height: 23px;
+}
+.contactFormDiv {
+    display: block;
+    margin: 30px 0px;
+    padding: 0px;
+}
+.formInput {
+    border: none;
+    background: none;
+    width: 100%;
+}
+.formInput input {
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 5px;
+    margin: 0px 0px 30px 0px;
+    border-bottom: #777 solid 1px;
+}
+.formInput textarea {
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 5px;
+    margin: 0px 0px 30px 0px;
+    border-bottom: #777 solid 1px;
+}
+.val{
+    background: none;
+    border: none;
+    border-bottom: #999 solid 1px;
+}
+.agree-terms {
+    padding: 15px 0px;
+    font-size: 13px;
+    color: #999;
+}
+button.submit-button {
+    background: none;
+    border: #999 solid 1px;
+    color: #fff;
+    padding: 5px 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.ftrDiv {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+}
+.ftrDiv span {
+    margin: 0px 10px;
+}
+.ftrDiv span a {
+    margin: 0px 10px;
+    color: #fff;
+}
