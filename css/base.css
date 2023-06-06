@@ -359,3 +359,6 @@ button.submit-button {
     margin: 0px 10px;
     color: #fff;
 }
+#message {
+    background-color: white;
+}
