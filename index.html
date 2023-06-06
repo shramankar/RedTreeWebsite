@@ -16,7 +16,25 @@
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-
+   
+    <STYLE>
+    #message {
+      background-color: white;
+    }
+    #name {
+      background-color: white;
+    }
+    #Phone {
+      background-color: white;
+    }
+    #Company {
+      background-color: white;
+    }
+    #email {
+      background-color: white;
+    }
+  </STYLE>
+  
     
   </head>
   <body>
@@ -260,59 +278,59 @@
         </div>
       </div>
     </div>
+
+
+
     <div class="contactForm">
       <div class="container">
         <h5 id="connect">Let's Connect</h5>
         <p class="paraInfo">
-          Thank you for your intrest in RedTree Inc. Please fill put the form below or <br/> e-mail us at shreyas.kar@stanford.edu and we will get back to you soon as we can!        </p>
+          Thank you for your interest in RedTree Inc. Please fill out the form below or <br/> e-mail us at shreyas.kar@stanford.edu and we will get back to you as soon as we can!
+        </p>
         <div class="contactFormDiv">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="formInput">                
-                <input type="text" id="name" name="name" placeholder="Name*">
+          <!-- update the form tag with formspree action -->
+          <form action="https://formspree.io/f/xqkovlge" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="formInput">
+                  <input type="text" id="name" name="name" placeholder="Name*">
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="formInput">                
-                <input type="email" id="email" name="email" placeholder="Enter your email">
+              
+              <!-- your other fields here -->
+              <div class="col-md-6">
+                <div class="formInput">                
+                  <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
               </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="formInput">                
-                <input type="text" id="Company" name="Company" placeholder="Company name*">
+  
+              <div class="col-md-6">
+                <div class="formInput">                
+                  <input type="text" id="Company" name="Company" placeholder="Company name*">
+                </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="formInput">                
-                <input type="tel" id="Phone" name="Phone" placeholder="Phone*">
+              <div class="col-md-6">
+                <div class="formInput">                
+                  <input type="tel" id="Phone" name="Phone" placeholder="Phone*">
+                </div>
               </div>
-            </div>
-            <div class="col-md-12">
-              <div class="formInput">                
-                <textarea id="message" name="message" placeholder="Leave a message here"></textarea>
+              <div class="col-md-12">
+                <div class="formInput">                
+                  <textarea id="message" name="message" placeholder="Leave a message here"></textarea>
+                </div>
               </div>
+              
+              <button class="submit-button" type="submit">Submit</button>
             </div>
-
-          </div>
-            
-            <div class="captcha">
-            <label for="captcha"> I'm not a robot : --  8+2 =</label>
-            <input type="text" id="captcha" name="captcha" placeholder="enter the correct value*" class="val">
+          </form>
         </div>
-
-            <div class="agree-terms">
-            <label for="Terms"></label>
-            <input type="checkbox" id="Terms" name="Terms">
-            i agree to the <span style="color: #06b1f1; cursor: pointer;">privacy policy. </span>
-            </div> 
-            <button class="submit-button" type="submit">Submit</button>
-
-        </div>
-
+      </div>
     </div>
 
-    </div>
+
+
+
+
 
       <!-- FOOTER -->
       <footer class="container">
