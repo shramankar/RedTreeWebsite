@@ -359,6 +359,14 @@ button.submit-button {
     margin: 0px 10px;
     color: #fff;
 }
+.centered-indicators {
+    position: absolute;
+    bottom: -50px;  /* Adjust as needed */
+    left: 34.5%;
+    transform: translateX(-50%);
+  }
+  
+  
 #message {
     background-color: white;
 }

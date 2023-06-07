@@ -69,6 +69,35 @@ body {
   letter-spacing: -.05rem;
 }
 
+.external-indicators {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+
+.external-controls {
+  width: auto;
+  height: 100%;
+  padding: 0 20px;  /* Adjust as needed */
+}
+
+.carousel-control-prev {
+  left: -70px;  /* Adjust as needed */
+}
+
+.carousel-control-next {
+  right: -70px;  /* Adjust as needed */
+}
+.centered-indicators {
+  position: absolute;
+  bottom: -40px;  /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
