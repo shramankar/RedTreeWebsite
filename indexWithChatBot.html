@@ -39,8 +39,44 @@
     padding-left: 10px; /* adjust as needed */
 }
 
-  </STYLE>
-  
+#chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 300px;
+            height: 50px; /* Adjusted height for minimized state */
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            overflow: auto;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #chatbot.minimized {
+            height: 50px; /* Minimized state height */
+        }
+        #chatbot:not(.minimized) {
+            height: 400px; /* Maximized state height */
+        }
+        #chatbot input, #chatbot #messages {
+            display: none;
+        }
+        #chatbot.minimized #minimize {
+            display: none;
+        }
+        #chatbot:not(.minimized) #maximize {
+            display: none;
+        }
+        #chatbot:not(.minimized) input, #chatbot:not(.minimized) #messages {
+            display: block;
+        }
+
+
+
+
+
+
+    </style>
     
   </head>
   <body>
@@ -132,37 +168,36 @@
     
     <!-- Indicators -->
     <ol class="carousel-indicators centered-indicators">
-      <li data-target="#videoCarousel" data-slide-to="0" ></li>
-      <li data-target="#videoCarousel" data-slide-to="1" class="active" ></li>
+      <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#videoCarousel" data-slide-to="1"></li>
       <li data-target="#videoCarousel" data-slide-to="2"></li>
-      <li data-target="#videoCarousel" data-slide-to="3"></li>
     </ol>
     
     <div class="carousel-inner">
 
-      <div class="carousel-item " >
+      <div class="carousel-item active">
+        <h3 class="demo-subheading">Use Case 1 of n: Financial Analyst</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9_oJVWF6Z8c?cc_load_policy=1" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="carousel-item active">
         <h3 class="demo-subheading">Use Case 1 of n: Financial Analyst</h3>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WI-RijnMOmA?cc_load_policy=1" allowfullscreen></iframe>
         </div>
       </div>
 
-      <div class="carousel-item active" >
-        <h3 class="demo-subheading">Use Case 2 of n: Corporate Training</h3>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9_oJVWF6Z8c?cc_load_policy=1" allowfullscreen></iframe>
-        </div>
-      </div>
-
       <div class="carousel-item">
-        <h3 class="demo-subheading">Use Case 3 of n: School/College Counselor</h3>
+        <h3 class="demo-subheading">Use Case 2 of n: School/College Counselor</h3>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AFWd2cpKEms?cc_load_policy=1" allowfullscreen></iframe>
         </div>
       </div>
 
       <div class="carousel-item">
-        <h3 class="demo-subheading">Use Case 4 of n: Journalist Research</h3>
+        <h3 class="demo-subheading">Use Case 3 of n: Journalist Research</h3>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uaP3S4a_1YY?cc_load_policy=1" allowfullscreen></iframe>
         </div>
@@ -391,6 +426,59 @@
         </div>
         <p style="text-align: center;">&copy; 2023  Red Tree, Inc &middot; </p>
       </footer>
+
+      
+      
+
+      <div id="chatbot" class="minimized">
+        <button id="minimize">Minimize</button>
+        <button id="maximize">Maximize</button>
+        <div id="messages"></div>
+        <input id="input" type="text" placeholder="Type a message...">
+    </div>
+
+    <script>
+        document.getElementById('minimize').addEventListener('click', function() {
+            document.getElementById('chatbot').classList.add('minimized');
+        });
+        document.getElementById('maximize').addEventListener('click', function() {
+            document.getElementById('chatbot').classList.remove('minimized');
+        });
+        document.getElementById('input').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                var message = event.target.value;
+                event.target.value = '';
+                
+                var messageElement = document.createElement('p');
+                messageElement.textContent = 'You: ' + message;
+                document.getElementById('messages').appendChild(messageElement);
+                
+                fetch('http://your-api-server-url/chatbot', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({message: message})
+                })
+                .then(response => response.json())
+                .then(data => {
+                    var responseElement = document.createElement('p');
+                    responseElement.textContent = 'Chatbot: ' + data.response;
+                    document.getElementById('messages').appendChild(responseElement);
+                    document.getElementById('chatbot').scrollTop = document.getElementById('chatbot').scrollHeight;
+                });
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
     </main>
 
     <!-- Bootstrap core JavaScript
